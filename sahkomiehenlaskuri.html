@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="fi" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<style>
+
+#borderDemo {
+outline: 4px dotted rgba(0,164,68,0.65);
+outline-offset: 3px;
+padding: 25px;
+margin: 50px;
+}
+
+h2.otsikko { 
+    padding: 50px;
+    color:coral;
+    border: 2px solid #949599;
+    height: 100px;
+    width: 300px;
+
+
+}
+
+p.vastaus {
+    color:blueviolet;
+    padding: 500px;
+    outline: 4px dotted rgba(0,164,68,0.65);
+    outline-offset: 3px;
+    padding: 25px;
+    margin: 50px;
+    text-align: center;
+    letter-spacing: 5px;
+
+}
+
+#demo {
+-webkit-box-shadow: 2px 3px 41px 16px #000000; 
+box-shadow: 2px 3px 41px 16px #000000;
+}
+#demo {
+ background-color: #1C6EA4;
+ display: block;
+ margin: 50px auto 0;
+ width: 200px;
+ height: 90px;
+ color: #FFF;
+ padding: 10px;
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+function laske()
+{
+var sjannite = document.getElementById("fjannite").value;
+var svirta = document.getElementById("fvirta").value;
+
+//var svirta = document.syotto.virta.value;
+var tulos = sjannite / svirta;
+
+if (isNaN(tulos))
+    {
+        window.alert("tulos ei ole numero")
+    }
+else
+    {
+        document.getElementById('uloste').textContent = tulos
+    }
+
+}
+
+
+
+
+</script>
+
+    <center>
+    <h2 class=otsikko> lasketaan vastus, anna Jännite ja Virta </h2>
+    </center>
+
+    <br />
+    <br />
+
+    <form name="syotto">
+
+        <br />
+        Jannite: <input type="text" name="jannite" value="jannite" id="fjannite" />
+        <br />
+        <br />
+        Virta: <input type="text" name="virta" value="virta" id="fvirta" />
+        <br />
+        <br />
+        <input type="button" value="laske" onclick="laske()" />
+        <br />
+        <br />
+
+
+        
+        <div id="demo">
+            <center><p> Vastaus on: </p>
+            <p id=uloste></p>
+        </center>
+        </div>
+
+
+
+    </form>
+
+</body>
+</html>
