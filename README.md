@@ -1,5 +1,5 @@
 # Puimuri
 sahkomiehen laskin
 
-Tämä on kouluprojekti, sähkömiehen laskin. 
+Tämä on koulun javascript projekti, sähkömiehen laskin. 
 Aloitettu 22.03.2019
